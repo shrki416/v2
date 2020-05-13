@@ -5,12 +5,12 @@ title: Twitter-Showcase
 # Twitter <strong>Showcase App</strong>
 
 Twitter Showcase
-<img src="img/twitter-showcase-1.jpg" alt="website photo" />
+<img src="images/twitter-showcase-1.jpg" alt="website photo" />
 
 This is fun web application that utilizes data from the Twitter's API to
 allow a person to search for recent tweets of Twitter users.
 
-<img src="img/twitter-showcase-2.jpg" alt="website photo" />
+<img src="images/twitter-showcase-2.jpg" alt="website photo" />
 
 This application was a lot of fun to build. It challenged my in many
 ways. I'm so glad I was able to complete this challenge as it taught me
