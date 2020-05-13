@@ -3,12 +3,10 @@ import Introduction from "../components/Introduction"
 import About from "../components/about"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-// import ThemeChanger from "../components/themeChanger"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    {/* <ThemeChanger /> */}
     <Introduction />
     <About />
   </Layout>
