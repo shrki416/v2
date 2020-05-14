@@ -5,7 +5,6 @@ module.exports = {
     author: `AA-DEV`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -20,9 +19,11 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-dark-mode`,
     `gatsby-plugin-dark-mode`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -33,11 +34,9 @@ module.exports = {
         background_color: `#002d40`,
         theme_color: `#002d40`,
         display: `minimal-ui`,
-        icon: `src/images/laptop-emoji.png`, // This path is relative to the root of the site.
+        icon: `src/images/laptop-emoji.png`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }

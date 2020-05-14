@@ -1,11 +1,14 @@
 ---
-title
+title: ToDo App
+image: Image Place Holder
 ---
 
 # Daily<strong>Todo List</strong>
 
 Todo List
-<img src="img/todo-1.jpg" alt="website photo" />
+![](images/todo-1.jpg?raw=true)
+
+<!-- <img src="img/todo-1.jpg" alt="website photo" /> -->
 
 A todo list application. It's a right of passage for any new developer
 learning to code.

@@ -83,6 +83,8 @@ const About = () => (
         </p>
       </div>
 
+      {/* <Img src={} alt={} /> */}
+
       {/* <img
         src="img/portfolio-03.jpg"
         alt="Laptop on a desk"
