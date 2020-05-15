@@ -1,11 +1,11 @@
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import logo from "../images/aa-black-logo.png"
+// import logo from "../images/aa-black-logo.png"s
 
 const Header = ({ data }) => (
   <header>
-    <div>hello</div>
+    <div>header & Navigation placeholders</div>
   </header>
 )
 Header.propTypes = {

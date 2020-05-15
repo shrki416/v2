@@ -19,13 +19,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 1000,
-          padding: `1rem`,
-        }}
-      >
+      <div>
         <main>{children}</main>
       </div>
     </>
