@@ -1,13 +1,76 @@
 import React from "react"
+import { Link } from "gatsby"
+import deskPhoto from "../images/portfolio-03.jpg"
+import resume from "../images/AA_Resume_v2.pdf"
+import styled from "styled-components"
+
+const AboutWrapper = styled.section`
+  color: var(--clr-darl);
+  margin: 0 auto;
+  max-width: 1000px;
+`
+
+const AboutMeSection = styled.section`
+  max-width: 1000px;
+  margin: 0 auto;
+
+  @media (min-width: 600px) {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-areas:
+      "title img"
+      "subtitle img"
+      "text img";
+    grid-column-gap: 2em;
+  }
+
+  img {
+    box-shadow: var(--bs);
+    margin-bottom: 2em;
+
+    @media (min-width: 600px) {
+      grid-area: img;
+      position: relative;
+      z-index: 2;
+    }
+  }
+`
+
+const AboutMeSectionTitle = styled.h2`
+  margin-bottom: 0.25em;
+  @media (min-width: 600px) {
+    grid-area: title;
+  }
+`
+
+const AboutMeSectionSubTitle = styled.p`
+  margin: 0;
+  font-size: var(--fs-h3);
+  background: var(--clr-accent);
+  padding: 0.25em 1em;
+  font-family: var(--ff-secondary);
+  margin-bottom: 1em;
+
+  @media (min-width: 600px) {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    position: relative;
+    left: -1em;
+    width: calc(100% + 2em);
+    padding-left: 1em;
+    padding-right: calc(200px + 4em);
+  }
+`
+
+const AboutMeSectionText = styled.div`
+  @media (min-width: 600px) {
+    grid-area: text;
+  }
+`
 
 const About = () => (
   <>
-    <section
-      style={{
-        background: `#bdc3c7`,
-        marginBottom: `1.5rem`,
-      }}
-    >
+    <AboutWrapper>
       <h2>About Me</h2>
       <div>
         <div>
@@ -50,26 +113,21 @@ const About = () => (
             intimidating, but once I take the plunge I'm often surprised by how
             confident I get taking on new challenges that I wouldn't have
             tackled before. The world in an incredible place, traveling allows
-            me to discover the world's &#127757 remarkable cultural diversity.
+            me to discover the world's remarkable cultural diversity.
           </p>
         </div>
       </div>
 
-      <a href="#work" className="btn">
-        My Work
-      </a>
-    </section>
+      <Link to={"/"} className="btn">
+        Projects
+      </Link>
+    </AboutWrapper>
 
-    <section
-      style={{
-        background: `#f1c40f`,
-        marginBottom: `1.5rem`,
-      }}
-    >
-      <h2>... more about me</h2>
-      <p>Joining SDMM</p>
+    <AboutMeSection>
+      <AboutMeSectionTitle>... more about me</AboutMeSectionTitle>
+      <AboutMeSectionSubTitle>Joining SDMM</AboutMeSectionSubTitle>
 
-      <div>
+      <AboutMeSectionText>
         <p>
           <strong>Software Development Mastermind program</strong> is a hands-on
           learning program where I worked with Andy Sterkowitz who is a
@@ -81,22 +139,16 @@ const About = () => (
           development skills. I completed four projects during that time and met
           the deadlines on all my projects.
         </p>
-      </div>
+      </AboutMeSectionText>
 
-      {/* <Img src={} alt={} /> */}
-
-      {/* <img
-        src="img/portfolio-03.jpg"
-        alt="Laptop on a desk"
-        className="about-me__img"
-      /> */}
+      <img src={deskPhoto} alt="Laptop on a desk" />
 
       <div>
-        <a href="img/AA_Resume_v2.pdf" className="btn">
+        <Link to={resume} className="btn">
           <strong>Download My Resume</strong>
-        </a>
+        </Link>
       </div>
-    </section>
+    </AboutMeSection>
   </>
 )
 

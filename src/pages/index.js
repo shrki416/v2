@@ -29,6 +29,7 @@ export const query = graphql`
           fields {
             slug
           }
+          id
           frontmatter {
             title
           }
