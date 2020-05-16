@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
+import ThemeChanger from "../components/themeChanger"
 
 const Wrapper = styled.header`
   display: flex;
@@ -68,6 +69,7 @@ const Header = ({ data }) => (
           </Link>
         </li>
       </Menu>
+      <ThemeChanger />
     </Wrapper>
   </header>
 )
