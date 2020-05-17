@@ -3,6 +3,10 @@ module.exports = {
     title: `<AA />`,
     description: `Portfolio Site v2`,
     author: `AA-DEV`,
+    social: {
+      twitter: `shrki416`,
+      github: `shrki416`,
+    },
   },
   plugins: [
     {
