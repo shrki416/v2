@@ -1,16 +1,17 @@
 ---
 title: Twitter-Showcase
+image: ../images/twitter-showcase-1.jpg
 ---
 
 # Twitter <strong>Showcase App</strong>
 
 Twitter Showcase
-<img src="./images/twitter-showcase-1.jpg" alt="website photo" />
+![first-image](../images/twitter-showcase-1.jpg)
 
 This is fun web application that utilizes data from the Twitter's API to
 allow a person to search for recent tweets of Twitter users.
 
-<img src="images/twitter-showcase-2.jpg" alt="website photo" />
+![second-image](../images/twitter-showcase-2.jpg)
 
 This application was a lot of fun to build. It challenged my in many
 ways. I'm so glad I was able to complete this challenge as it taught me

@@ -1,15 +1,16 @@
 ---
 title: BMP
+image: ../images/bmpnj-1.jpg
 ---
 
-# Bayonne<strong>Municipal Pool</strong>
+# Bayonne <strong>Municipal Pool</strong>
 
 BMP
-<img src="img/bmpnj-1.jpg" alt="website photos" />
+![first-image](../images/bmpnj-2.jpg)
 
 This project uses Bootstrap 4
 
-<img src="img/bmpnj-2.jpg" alt="website photo" />
+![second-image](../images/bmpnj-2.jpg)
 
 I wanted to learn how to use Bootstrap and our hometown pool doesn't
 have a website. I thought this would be a perfect opportunity to learn

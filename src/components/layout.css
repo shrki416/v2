@@ -52,6 +52,19 @@ body {
   flex-direction: column;
 }
 
+body::-webkit-scrollbar {
+  width: 0.4em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--clr-accent);
+  border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--clr-dark);
+}
+
 section {
   padding: 4em 2em;
 }

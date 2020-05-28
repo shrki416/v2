@@ -1,11 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
 import { FaTwitter, FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa"
 
 const FooterWrapper = styled.footer`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   min-height: 10vh;
 
@@ -13,6 +12,7 @@ const FooterWrapper = styled.footer`
     color: var(--clr-dark);
     text-decoration: none;
     font-family: var(--ff-secondary);
+    padding: 1rem;
 
     @media (max-width: 600px) {
       font-size: 0.75em;
@@ -38,30 +38,30 @@ const FooterWrapper = styled.footer`
 
 const footer = () => (
   <FooterWrapper>
-    <Link to="/">
+    <a href="https://www.facebook.com/profile.php?id=100041436045937">
       <sup>
         <FaFacebook />
       </sup>
       Facebook
-    </Link>
-    <Link to="/">
+    </a>
+    <a href="https://github.com/shrki416">
       <sup>
         <FaGithub />
       </sup>
       Github
-    </Link>
-    <Link to="/">
+    </a>
+    <a href="https://twitter.com/shrki416">
       <sup>
         <FaTwitter />
       </sup>
       Twitter
-    </Link>
-    <Link to="/">
+    </a>
+    <a href="https://linkedin.com/in/aa-dev">
       <sup>
         <FaLinkedin />
       </sup>
       LinkedIn
-    </Link>
+    </a>
   </FooterWrapper>
 )
 

@@ -1,19 +1,17 @@
 ---
 title: ToDo App
-image: Image Place Holder
+image: ../images/todo-1.jpg
 ---
 
 # Daily<strong>Todo List</strong>
 
 Todo List
-![](images/todo-1.jpg?raw=true)
-
-<!-- <img src="img/todo-1.jpg" alt="website photo" /> -->
+![image](../images/todo-1.jpg)
 
 A todo list application. It's a right of passage for any new developer
 learning to code.
 
-<img src="img/todo-2.jpg" alt="website photo" />
+![second-image](../images/todo-2.jpg)
 
 Building a todo app is important to new developers because you learn
 many key concepts like working with the DOM, functional programming,

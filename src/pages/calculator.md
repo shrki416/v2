@@ -1,17 +1,18 @@
 ---
 title: Vanilla JS Calculator
+image: ../images/calculator-1.jpg
 ---
 
 # Vanilla JS<strong>Calculator</strong>
 
 JS Calculator
 
-<img src="img/calculator-1.jpg" alt="" class="intro__img" />
+![first-image](../images/calculator-1.jpg)
 
 This project is built entirely with pure vanilla JavaScript, styled with
 CSS grid and hosted using gitHub pages.
 
-<img src="img/calculator-2.png" alt="calculator" />
+![second-image](../images/calculator-2.jpg)
 
 I was excited to code up a calculator. I mean it's easy! how hard can it
 be to make a calculator?! I was soon to find out.
