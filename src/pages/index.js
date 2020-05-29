@@ -15,6 +15,7 @@ const IndexPage = ({ data }) => (
     {data.allMarkdownRemark.edges.map(({ node }) => (
       <div key={node.id}>
         <Link to={node.fields.slug}>
+          <h3>{node.frontmatter.title}</h3>
           <Img
             fluid={node.frontmatter.image.childImageSharp.fluid}
             alt={node.frontmatter.title}
@@ -38,8 +39,8 @@ export const query = graphql`
             title
             image {
               childImageSharp {
-                fluid(maxWidth: 300) {
-                  ...GatsbyImageSharpFluid
+                fluid(maxWidth: 1000) {
+                  ...GatsbyImageSharpFluid_noBase64
                 }
               }
             }

@@ -1,11 +1,11 @@
 ---
 title: Expense-Tracker
+subtitle: Expense Tracker
 image: ../images/expense-tracker-1.jpg
 ---
 
 # Expense<strong>Tracker App</strong>
 
-Expense Tracker
 ![first-image](../images/expense-tracker-1.jpg)
 
 Expense Tracker is built with React and is deployed on Heroku. Using
@@ -20,4 +20,4 @@ via props. In this application the user is able to add and delete
 expenses using a form. The data from this application persists in the
 browser using localStorage.
 
-<a href="https://polar-sands-39515.herokuapp.com/">Visit Website</a>
+<a class="btn" href="https://polar-sands-39515.herokuapp.com/">Visit Website</a>

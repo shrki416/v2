@@ -1,17 +1,15 @@
 ---
 title: Twitter-Showcase
+subtitle: Twitter-Showcase
 image: ../images/twitter-showcase-1.jpg
 ---
 
 # Twitter <strong>Showcase App</strong>
 
-Twitter Showcase
-![first-image](../images/twitter-showcase-1.jpg)
-
 This is fun web application that utilizes data from the Twitter's API to
 allow a person to search for recent tweets of Twitter users.
 
-![second-image](../images/twitter-showcase-2.jpg)
+![project-image](../images/twitter-showcase-2.jpg)
 
 This application was a lot of fun to build. It challenged my in many
 ways. I'm so glad I was able to complete this challenge as it taught me
@@ -26,4 +24,4 @@ CSS grid and flexbox. Thus, as a result the application is fully
 responsive. As a I continue to learn, it would be so much fun to
 continue to grow this application and add features to it in the future.
 
-<a href="https://frozen-dusk-41164.herokuapp.com/">Visit Website</a>
+<a class="btn" href="https://frozen-dusk-41164.herokuapp.com/">Visit Website</a>

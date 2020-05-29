@@ -5,12 +5,22 @@ import styled from "styled-components"
 
 import code from "../images/code.svg"
 import world from "../images/world.svg"
+import aboutMe from "../images/about-me.svg"
 import deskPhoto from "../images/portfolio-03.jpg"
 
 const AboutWrapper = styled.section`
   color: var(--clr-dark);
   margin: 0 auto;
-  max-width: 1000px;
+
+  p {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+  }
+
+  h2 {
+    text-align: center;
+  }
 `
 
 const AboutMeSection = styled.section`
@@ -70,14 +80,35 @@ const AboutMeSectionText = styled.div`
     grid-area: text;
   }
 `
+const Container = styled.div`
+  width: 100%;
+  display: flex;
+  margin: 2rem 0;
+
+  p {
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.75;
+  }
+
+  img {
+    padding: 1.25rem;
+  }
+
+  h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+`
 
 const About = () => {
   return (
     <>
       <AboutWrapper id="about">
         <h2>About Me</h2>
+        <p> ..... </p>
 
-        <div>
+        <Container>
           <div>
             <h3>Hi! It's Me</h3>
             <p>
@@ -88,6 +119,7 @@ const About = () => {
               is shaping our world and I want to contribute to it and make an
               impact. I can't imagine where we'd be without cool software.
             </p>
+            <img src={aboutMe} alt="aboutMe" />
           </div>
 
           <div>
@@ -118,7 +150,7 @@ const About = () => {
             </p>
             <img src={world} alt="world-map" />
           </div>
-        </div>
+        </Container>
         <Link to={"/"} className="btn">
           Projects
         </Link>
