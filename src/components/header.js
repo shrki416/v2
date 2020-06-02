@@ -49,7 +49,7 @@ const Header = ({ data }) => (
     <Wrapper>
       <Menu>
         <li>
-          <Link to="/">
+          <Link to="#about">
             <sup>01. </sup>About
           </Link>
         </li>

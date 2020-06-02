@@ -20,6 +20,7 @@ const AboutWrapper = styled.section`
 
   h2 {
     text-align: center;
+    margin-bottom: 1.5em;
   }
 `
 
@@ -81,9 +82,10 @@ const AboutMeSectionText = styled.div`
   }
 `
 const Container = styled.div`
-  width: 100%;
-  display: flex;
-  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 2.5em;
+  margin-bottom: 2rem;
 
   p {
     font-size: 1rem;
@@ -91,13 +93,14 @@ const Container = styled.div`
     line-height: 1.75;
   }
 
-  img {
-    padding: 1.25rem;
-  }
-
   h3 {
     text-align: center;
     margin-bottom: 2rem;
+  }
+
+  @media (max-width: 800px) {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
   }
 `
 
@@ -106,7 +109,6 @@ const About = () => {
     <>
       <AboutWrapper id="about">
         <h2>About Me</h2>
-        <p> ..... </p>
 
         <Container>
           <div>
