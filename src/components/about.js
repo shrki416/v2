@@ -22,6 +22,22 @@ const AboutWrapper = styled.section`
     text-align: center;
     margin-bottom: 1.5em;
   }
+
+  span {
+    position: relative;
+  }
+
+  span:before {
+    content: "About Me";
+    font-size: 1.5em;
+    position: absolute;
+    color: var(--clr-accent);
+    z-index: -1;
+    white-space: nowrap;
+    left: 30%;
+    top: 15%;
+    // background: var(--clr-light);
+  }
 `
 
 const AboutMeSection = styled.section`
@@ -108,7 +124,9 @@ const About = () => {
   return (
     <>
       <AboutWrapper id="about">
-        <h2>About Me</h2>
+        <h2>
+          <span>About Me</span>
+        </h2>
 
         <Container>
           <div>
