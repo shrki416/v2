@@ -11,6 +11,7 @@ import deskPhoto from "../images/portfolio-03.jpg"
 const AboutWrapper = styled.section`
   color: var(--clr-dark);
   margin: 0 auto;
+  // background: #fff;
 
   p {
     font-size: 3rem;
@@ -21,6 +22,7 @@ const AboutWrapper = styled.section`
   h2 {
     text-align: center;
     margin-bottom: 1.5em;
+    font-size: 2.5em;
   }
 
   span {
@@ -28,15 +30,15 @@ const AboutWrapper = styled.section`
   }
 
   span:before {
-    content: "About Me";
+    font-family: var(--ff-secondary);
+    content: "about me";
     font-size: 1.5em;
     position: absolute;
-    color: var(--clr-accent);
+    color: rgba(255, 198, 0, 0.75);
     z-index: -1;
     white-space: nowrap;
     left: 30%;
     top: 15%;
-    // background: var(--clr-light);
   }
 `
 
@@ -99,9 +101,12 @@ const AboutMeSectionText = styled.div`
 `
 const Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(2, auto);
   grid-gap: 2.5em;
-  margin-bottom: 2rem;
+
+  img {
+    width: 100%;
+  }
 
   p {
     font-size: 1rem;
@@ -114,9 +119,29 @@ const Container = styled.div`
     margin-bottom: 2rem;
   }
 
-  @media (max-width: 800px) {
+  // div:nth-of-type(3) {
+  //   background: white;
+  // }
+
+  @media (min-width: 1000px) {
+    img {
+      width: 85%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @media (min-width: 800px) {
     display: grid;
     grid-template-columns: repeat(1, auto);
+  }
+
+  @media (min-width: 600px) {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 1.5em;
+    margin-bottom: 2rem;
   }
 `
 

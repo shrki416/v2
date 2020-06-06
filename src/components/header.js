@@ -44,12 +44,12 @@ const Menu = styled.ul`
   }
 `
 
-const Header = ({ data }) => (
+const Header = () => (
   <header>
     <Wrapper>
       <Menu>
         <li>
-          <Link to="#about">
+          <Link to="/">
             <sup>01. </sup>About
           </Link>
         </li>
