@@ -22,6 +22,7 @@ const Intro = styled.section`
       min-width: 250px;
       position: relative;
       z-index: 2;
+      border-radius: 1em;
     }
   }
 `

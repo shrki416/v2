@@ -11,7 +11,6 @@ import deskPhoto from "../images/portfolio-03.jpg"
 const AboutWrapper = styled.section`
   color: var(--clr-dark);
   margin: 0 auto;
-  // background: #fff;
 
   p {
     font-size: 3rem;
@@ -22,7 +21,7 @@ const AboutWrapper = styled.section`
   h2 {
     text-align: center;
     margin-bottom: 1.5em;
-    font-size: 2.5em;
+    font-size: 2em;
   }
 
   span {
@@ -34,7 +33,7 @@ const AboutWrapper = styled.section`
     content: "about me";
     font-size: 1.5em;
     position: absolute;
-    color: rgba(255, 198, 0, 0.75);
+    color: rgba(255, 198, 0, 0.5);
     z-index: -1;
     white-space: nowrap;
     left: 30%;
@@ -58,7 +57,6 @@ const AboutMeSection = styled.section`
 
   img {
     box-shadow: var(--bs);
-    margin-bottom: 2em;
 
     @media (min-width: 600px) {
       grid-area: img;
@@ -76,12 +74,11 @@ const AboutMeSectionTitle = styled.h2`
 `
 
 const AboutMeSectionSubTitle = styled.p`
-  margin: 0;
+  margin-bottom: 0;
   font-size: var(--fs-h3);
   background: var(--clr-accent);
   padding: 0.25em 1em;
   font-family: var(--ff-secondary);
-  margin-bottom: 1em;
 
   @media (min-width: 600px) {
     grid-column: 1 / -1;
@@ -98,14 +95,28 @@ const AboutMeSectionText = styled.div`
   @media (min-width: 600px) {
     grid-area: text;
   }
+  margin-bottom: 2em;
 `
+
 const Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-gap: 2.5em;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2em;
+
+  div {
+    border: 1px solid var(--clr-dark);
+    background: #fff;
+    color: var(--clr-dark);
+    padding: 1em;
+    border-radius: 1em;
+    margin-bottom: 2em;
+  }
 
   img {
-    width: 100%;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   p {
@@ -115,33 +126,9 @@ const Container = styled.div`
   }
 
   h3 {
+    font-family: var(--ff-secondary);
     text-align: center;
-    margin-bottom: 2rem;
-  }
-
-  // div:nth-of-type(3) {
-  //   background: white;
-  // }
-
-  @media (min-width: 1000px) {
-    img {
-      width: 85%;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-
-  @media (min-width: 800px) {
-    display: grid;
-    grid-template-columns: repeat(1, auto);
-  }
-
-  @media (min-width: 600px) {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-gap: 1.5em;
-    margin-bottom: 2rem;
+    margin: 2em auto;
   }
 `
 
@@ -155,6 +142,7 @@ const About = () => {
 
         <Container>
           <div>
+            <img src={aboutMe} alt="aboutMe" />
             <h3>Hi! It's Me</h3>
             <p>
               I'm a self-taught developer who is passionate about learning and
@@ -164,12 +152,11 @@ const About = () => {
               is shaping our world and I want to contribute to it and make an
               impact. I can't imagine where we'd be without cool software.
             </p>
-            <img src={aboutMe} alt="aboutMe" />
           </div>
 
           <div>
-            <h3>Why Dev</h3>
             <img src={code} alt="code" />
+            <h3>Why Dev</h3>
             <p>
               It leads to innovations and creativity that literally change the
               world. Learning software development makes me feel like I there's
@@ -183,6 +170,7 @@ const About = () => {
           </div>
 
           <div>
+            <img src={world} alt="world-map" />
             <h3>Traveling</h3>
             <p>
               I LOVE to travel. It's one of my favorite things to do. It has
@@ -193,7 +181,6 @@ const About = () => {
               tackled before. The world in an incredible place, traveling allows
               me to discover the world's remarkable cultural diversity.
             </p>
-            <img src={world} alt="world-map" />
           </div>
         </Container>
         <Link to={"/"} className="btn">
