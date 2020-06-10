@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 import ThemeChanger from "../components/themeChanger"
@@ -49,24 +48,24 @@ const Header = () => (
     <Wrapper>
       <Menu>
         <li>
-          <Link to="/">
+          <a href="#about">
             <sup>01. </sup>About
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="/">
+          <a href="#portfolio">
             <sup>02. </sup>Projects
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="/">
+          <a href="/">
             <sup>03. </sup>Blog
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="/">
+          <a href="/">
             <sup>04. </sup>Contact
-          </Link>
+          </a>
         </li>
       </Menu>
       <ThemeChanger />

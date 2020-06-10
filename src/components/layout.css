@@ -122,3 +122,25 @@ h3 {
 .btn:hover {
   transform: scale(1.1);
 }
+
+/* Portfolio Section */
+
+.portfolio_item {
+  background: var(--clr-accent);
+  overflow: hidden;
+}
+
+.portfolio_img {
+  transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
+}
+
+.portfolio_item:focus {
+  position: relative;
+  z-index: 2;
+}
+
+.portfolio_img:hover,
+.portfolio_item:focus .portfolio_img {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
