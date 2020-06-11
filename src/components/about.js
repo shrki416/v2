@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import resume from "../images/AA_Resume_v2.pdf"
 import styled from "styled-components"
 
@@ -96,6 +95,10 @@ const AboutMeSectionText = styled.div`
     grid-area: text;
   }
   margin-bottom: 2em;
+
+  span {
+    font-family: var(--ff-secondary);
+  }
 `
 
 const Container = styled.div`
@@ -183,9 +186,9 @@ const About = () => {
             </p>
           </div>
         </Container>
-        <Link to={"/"} className="btn">
+        <a href="#portfolio" className="btn">
           Projects
-        </Link>
+        </a>
       </AboutWrapper>
 
       <AboutMeSection>
@@ -194,9 +197,9 @@ const About = () => {
 
         <AboutMeSectionText>
           <p>
-            <strong>Software Development Mastermind program</strong> is a
-            hands-on learning program where I worked with Andy Sterkowitz who is
-            a professional full-stack software developer.
+            <span>Software Development Mastermind program</span> is a hands-on
+            learning program where I worked with Andy Sterkowitz who is a
+            professional full-stack software developer.
           </p>
           <p>
             During the program I was assigned to work on real-world projects
@@ -209,9 +212,9 @@ const About = () => {
         <img src={deskPhoto} alt="Laptop on a desk" />
 
         <div>
-          <Link to={resume} className="btn">
+          <a href={resume} className="btn">
             <strong>Download My Resume</strong>
-          </Link>
+          </a>
         </div>
       </AboutMeSection>
     </>

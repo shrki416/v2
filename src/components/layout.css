@@ -17,6 +17,7 @@
   --clr-light: #d9ecf2;
   --clr-dark: #002d40;
   --clr-accent: #ffc600;
+  /* --clr-accent: #27ae60; */
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -117,6 +118,7 @@ h3 {
   letter-spacing: 2px;
   font-weight: var(--fw-bold);
   transition: transform 200ms ease-in-out;
+  font-family: var(--ff-secondary);
 }
 
 .btn:hover {
