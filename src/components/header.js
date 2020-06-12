@@ -63,7 +63,7 @@ const Header = () => (
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="#contact">
             <sup>04. </sup>Contact
           </a>
         </li>
