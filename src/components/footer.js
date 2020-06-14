@@ -38,25 +38,28 @@ const FooterWrapper = styled.footer`
 
 const footer = () => (
   <FooterWrapper>
-    <a href="https://www.facebook.com/profile.php?id=100041436045937">
+    <a
+      href="https://www.facebook.com/profile.php?id=100041436045937"
+      className="anchor-dark"
+    >
       <sup>
         <FaFacebook />
       </sup>
       Facebook
     </a>
-    <a href="https://github.com/shrki416">
+    <a href="https://github.com/shrki416" className="anchor-dark">
       <sup>
         <FaGithub />
       </sup>
       Github
     </a>
-    <a href="https://twitter.com/shrki416">
+    <a href="https://twitter.com/shrki416" className="anchor-dark">
       <sup>
         <FaTwitter />
       </sup>
       Twitter
     </a>
-    <a href="https://linkedin.com/in/aa-dev">
+    <a href="https://linkedin.com/in/aa-dev" className="anchor-dark">
       <sup>
         <FaLinkedin />
       </sup>

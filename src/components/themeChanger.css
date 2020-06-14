@@ -7,6 +7,18 @@ body.dark {
   color: var(--clr-light);
 }
 
+body.dark .anchor-dark {
+  color: var(--clr-light);
+}
+
+body.dark .anchor-dark:hover sup {
+  color: var(--clr-light);
+}
+
+body.dark .dark-p {
+  color: var(--clr-darkmode);
+}
+
 .theme-changer {
   display: none;
 }

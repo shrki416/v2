@@ -48,22 +48,22 @@ const Header = () => (
     <Wrapper>
       <Menu>
         <li>
-          <a href="#about">
+          <a href="#about" className="anchor-dark">
             <sup>01. </sup>About
           </a>
         </li>
         <li>
-          <a href="#portfolio">
+          <a href="#portfolio" className="anchor-dark">
             <sup>02. </sup>Projects
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="/" className="anchor-dark">
             <sup>03. </sup>Blog
           </a>
         </li>
         <li>
-          <a href="#contact">
+          <a href="#contact" className="anchor-dark">
             <sup>04. </sup>Contact
           </a>
         </li>

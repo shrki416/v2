@@ -61,7 +61,7 @@ const Introduction = () => (
     <Title>
       Hi, I am <strong>Ahmed Abdelaal</strong>
     </Title>
-    <SubTitle>Software Engineer</SubTitle>
+    <SubTitle className="dark-p">Software Engineer</SubTitle>
     <img src={AAImage} alt="Ahmed smiling" />
   </Intro>
 )

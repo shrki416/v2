@@ -8,7 +8,6 @@ import aboutMe from "../images/about-me.svg"
 import deskPhoto from "../images/portfolio-03.jpg"
 
 const AboutWrapper = styled.section`
-  // color: var(--clr-dark);
   margin: 0 auto;
 
   p {
@@ -107,7 +106,11 @@ const AboutMeSectionText = styled.div`
 const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 2em;
+  grid-gap: 1em;
+
+  @media (min-width: 1000px) {
+    grid-gap: 2em;
+  }
 
   div {
     border: 1px solid var(--clr-dark);
@@ -134,6 +137,7 @@ const Container = styled.div`
   h3 {
     font-family: var(--ff-secondary);
     text-align: center;
+    letter-spacing: 1px;
     margin: 2em auto;
   }
 `
@@ -196,7 +200,9 @@ const About = () => {
 
       <AboutMeSection>
         <AboutMeSectionTitle>... more about me</AboutMeSectionTitle>
-        <AboutMeSectionSubTitle>Joining SDMM</AboutMeSectionSubTitle>
+        <AboutMeSectionSubTitle className="dark-p">
+          Joining SDMM
+        </AboutMeSectionSubTitle>
 
         <AboutMeSectionText>
           <p>
