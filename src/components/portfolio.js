@@ -17,20 +17,22 @@ const PortfolioSection = styled.section`
     font-size: 2em;
   }
 
-  span {
-    position: relative;
-  }
+  @media (min-width: 800px) {
+    span {
+      position: relative;
+    }
 
-  span:before {
-    font-family: var(--ff-secondary);
-    content: "portfolio";
-    font-size: 1.5em;
-    position: absolute;
-    color: rgba(255, 198, 0, 0.2);
-    z-index: 1;
-    white-space: nowrap;
-    left: 30%;
-    top: 15%;
+    span:before {
+      font-family: var(--ff-secondary);
+      content: "portfolio";
+      font-size: 1.5em;
+      position: absolute;
+      color: rgba(255, 198, 0, 0.2);
+      z-index: 1;
+      white-space: nowrap;
+      left: 30%;
+      top: 15%;
+    }
   }
 `
 const Projects = styled.div`

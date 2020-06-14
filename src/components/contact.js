@@ -2,9 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 const ContactMe = styled.section`
-  width: 1000px;
   margin: 0 auto;
-  display: grid;
 
   h1 {
     font-size: 2em;
@@ -12,26 +10,11 @@ const ContactMe = styled.section`
     margin-bottom: 2em;
   }
 
-  span {
-    position: relative;
-  }
-
-  span:before {
-    font-family: var(--ff-secondary);
-    content: "Contact Me";
-    font-size: 1.5em;
-    position: absolute;
-    color: rgba(255, 198, 0, 0.5);
-    z-index: -1;
-    white-space: nowrap;
-    left: 30%;
-    top: 15%;
-  }
-
   h2 {
     position: relative;
     margin-bottom: 1.5em;
     font-size: 1.5em;
+    letter-spacing: 1px;
   }
   h2:before {
     content: "";
@@ -63,10 +46,33 @@ const ContactMe = styled.section`
     margin-top: 2em;
     border: none;
   }
+
+  @media (min-width: 800px) {
+    span {
+      position: relative;
+    }
+
+    span:before {
+      font-family: var(--ff-secondary);
+      content: "Contact Me";
+      font-size: 1.5em;
+      position: absolute;
+      color: rgba(255, 198, 0, 0.5);
+      z-index: -1;
+      white-space: nowrap;
+      left: 30%;
+      top: 15%;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    width: 1000px;
+  }
 `
 
 const Label = styled.label`
   font-family: var(--ff-secondary);
+  letter-spacing: 1px;
   display: block;
   font-weight: bold;
   text-transform: uppercase;
@@ -79,26 +85,17 @@ const Contact = () => (
     <h1>
       <span>Contact Me!</span>
     </h1>
-    <div className="inner">
-      <h2 className="major">Get in touch</h2>
-      <form method="post" action="/#">
-        <div>
-          <div className="field">
-            <Label htmlFor="name">Name</Label>
-            <input type="text" name="name" id="name" />
-          </div>
-          <div className="field">
-            <Label htmlFor="email">Email</Label>
-            <input type="email" name="email" id="email" />
-          </div>
-          <div className="field">
-            <Label htmlFor="message">Message</Label>
-            <textarea name="message" id="message" rows="5"></textarea>
-          </div>
-        </div>
-        <input type="submit" className="btn" value="Send Message" />
-      </form>
-    </div>
+    <h2 className="major">Get in touch</h2>
+    <form method="post" action="/#">
+      <Label htmlFor="name">Name</Label>
+      <input type="text" name="name" id="name" />
+      <Label htmlFor="email">Email</Label>
+      <input type="email" name="email" id="email" />
+      <Label htmlFor="message">Message</Label>
+      <textarea name="message" id="message" rows="5"></textarea>
+
+      <input type="submit" className="btn" value="Send Message" />
+    </form>
   </ContactMe>
 )
 

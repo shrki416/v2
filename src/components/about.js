@@ -8,7 +8,7 @@ import aboutMe from "../images/about-me.svg"
 import deskPhoto from "../images/portfolio-03.jpg"
 
 const AboutWrapper = styled.section`
-  color: var(--clr-dark);
+  // color: var(--clr-dark);
   margin: 0 auto;
 
   p {
@@ -23,20 +23,22 @@ const AboutWrapper = styled.section`
     font-size: 2em;
   }
 
-  span {
-    position: relative;
-  }
+  @media (min-width: 800px) {
+    span {
+      position: relative;
+    }
 
-  span:before {
-    font-family: var(--ff-secondary);
-    content: "about me";
-    font-size: 1.5em;
-    position: absolute;
-    color: rgba(255, 198, 0, 0.5);
-    z-index: -1;
-    white-space: nowrap;
-    left: 30%;
-    top: 15%;
+    span:before {
+      font-family: var(--ff-secondary);
+      content: "about me";
+      font-size: 1.5em;
+      position: absolute;
+      color: rgba(255, 198, 0, 0.5);
+      z-index: -1;
+      white-space: nowrap;
+      left: 30%;
+      top: 15%;
+    }
   }
 `
 
@@ -56,6 +58,7 @@ const AboutMeSection = styled.section`
 
   img {
     box-shadow: var(--bs);
+    margin-bottom: 1em;
 
     @media (min-width: 600px) {
       grid-area: img;
@@ -213,7 +216,7 @@ const About = () => {
 
         <div>
           <a href={resume} className="btn">
-            <strong>Download My Resume</strong>
+            <strong>Resumé</strong>
           </a>
         </div>
       </AboutMeSection>
