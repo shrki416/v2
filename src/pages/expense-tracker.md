@@ -1,12 +1,9 @@
 ---
-title: Expense-Tracker
+title: Expense
 subtitle: Expense Tracker
+sub_subtitle: Tracker App
 image: ../images/expense-tracker-1.jpg
 ---
-
-# Expense<strong>Tracker App</strong>
-
-![first-image](../images/expense-tracker-1.jpg)
 
 Expense Tracker is built with React and is deployed on Heroku. Using
 React on this project I can see why developers like using it and why
@@ -21,3 +18,4 @@ expenses using a form. The data from this application persists in the
 browser using localStorage.
 
 <a class="btn" href="https://polar-sands-39515.herokuapp.com/">Visit Website</a>
+<a class="btn" href="../">Home</a>

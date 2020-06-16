@@ -1,10 +1,9 @@
 ---
-title: Bayonne Municipal Pool
+title: Bayonne
 subtitle: BMP
+sub_subtitle: Municipal Pool
 image: ../images/bmpnj-1.jpg
 ---
-
-<!-- # Bayonne <strong>Municipal Pool</strong> -->
 
 This project uses Bootstrap 4
 
@@ -18,3 +17,4 @@ carousels, and more. Learning how Bootstrap implements it's design
 choices helped me learn more about CSS.
 
 <a class="btn" href="http://bmpnj.com/">Visit Website</a>
+<a class="btn" href="../">Home</a>

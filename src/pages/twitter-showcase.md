@@ -1,10 +1,9 @@
 ---
-title: Twitter-Showcase
+title: Twitter
 subtitle: Twitter-Showcase
+sub_subtitle: Showcase App
 image: ../images/twitter-showcase-1.jpg
 ---
-
-# Twitter <strong>Showcase App</strong>
 
 This is fun web application that utilizes data from the Twitter's API to
 allow a person to search for recent tweets of Twitter users.
@@ -25,3 +24,4 @@ responsive. As a I continue to learn, it would be so much fun to
 continue to grow this application and add features to it in the future.
 
 <a class="btn" href="https://frozen-dusk-41164.herokuapp.com/">Visit Website</a>
+<a class="btn" href="../">Home</a>

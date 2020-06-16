@@ -85,7 +85,7 @@ const Contact = () => (
     <h1>
       <span>Contact Me!</span>
     </h1>
-    <h2 className="major">Get in touch</h2>
+    <h2>Get in touch</h2>
     <form method="post" action="/#">
       <Label htmlFor="name">Name</Label>
       <input type="text" name="name" id="name" />

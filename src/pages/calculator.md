@@ -1,13 +1,11 @@
 ---
-title: Vanilla JS Calculator
+title: Vanilla JS
 subtitle: JS Calculator
+sub_subtitle: Calculator
 image: ../images/calculator-1.jpg
 ---
 
-<!-- # Vanilla JS<strong>Calculator</strong> -->
-
-This project is built entirely with pure vanilla JavaScript, styled with
-CSS grid and hosted using gitHub pages.
+This project is built entirely with pure vanilla JavaScript, styled with CSS grid and hosted using gitHub pages.
 
 ![project-image](../images/calculator-2.png)
 
@@ -22,3 +20,4 @@ taught me how to approach and think aobut problems like a programmer and
 how to find and implement creative solutions.
 
 <a class="btn" href="https://shrki416.github.io/Calculator-App/">Visit Website</a>
+<a class="btn" href="../">Home</a>

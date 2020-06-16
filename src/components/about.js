@@ -100,6 +100,7 @@ const AboutMeSectionText = styled.div`
 
   span {
     font-family: var(--ff-secondary);
+    letter-spacing: 1px;
   }
 `
 

@@ -11,9 +11,6 @@
   --ff-primary: "Kosugi Maru", cursive;
   --ff-secondary: "Baloo Bhai", cursive;
 
-  --fw-reg: 300;
-  --fw-bold: 900;
-
   --clr-light: #d9ecf2;
   --clr-dark: #002d40;
   --clr-accent: #ffc600;
@@ -116,7 +113,6 @@ h3 {
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-weight: var(--fw-bold);
   transition: transform 200ms ease-in-out;
   font-family: var(--ff-secondary);
 }
