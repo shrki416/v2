@@ -86,7 +86,12 @@ const Contact = () => (
       <span>Contact Me!</span>
     </h1>
     <h2>Get in touch</h2>
-    <form method="post" action="/#">
+    <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+    >
       <Label htmlFor="name">Name</Label>
       <input type="text" name="name" id="name" />
       <Label htmlFor="email">Email</Label>
