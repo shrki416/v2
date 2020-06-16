@@ -8,6 +8,10 @@ const PageWrapper = styled.div`
   display grid;
   place-content: center;
   height: 80vh;
+
+  a {
+   margin: 0 auto;
+  }
 `
 
 const NotFoundPage = () => (
@@ -16,6 +20,9 @@ const NotFoundPage = () => (
     <PageWrapper>
       <h1>NOT FOUND</h1>
       <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+      <a class="btn" href="../">
+        Home
+      </a>
     </PageWrapper>
   </Layout>
 )

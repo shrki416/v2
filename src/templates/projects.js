@@ -62,6 +62,10 @@ const PortfolioBody = styled.div`
     margin-right: auto;
     letter-spacing: 0.75px;
   }
+
+  a:nth-of-type(2) {
+    margin-top: 1em;
+  }
 `
 
 export default function Projects({ data }) {
