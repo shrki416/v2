@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 
 const ContactMe = styled.section`
@@ -80,28 +80,81 @@ const Label = styled.label`
   margin-bottom: 0.5em;
 `
 
-const Contact = () => (
-  <ContactMe id="contact">
-    <h1>
-      <span>Contact Me!</span>
-    </h1>
-    <h2>Get in touch</h2>
-    <form
-      name="contact"
-      method="POST"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
-    >
-      <Label htmlFor="name">Name</Label>
-      <input type="text" name="name" id="name" />
-      <Label htmlFor="email">Email</Label>
-      <input type="email" name="email" id="email" />
-      <Label htmlFor="message">Message</Label>
-      <textarea name="message" id="message" rows="5"></textarea>
+const Contact = () => {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+  })
 
-      <input type="submit" className="btn" value="Send Message" />
-    </form>
-  </ContactMe>
-)
+  const encode = data => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&")
+  }
+
+  const handleChange = e => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value,
+    })
+  }
+
+  const handleSubmit = e => {
+    e.preventDefault()
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...form }),
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error))
+  }
+
+  return (
+    <ContactMe id="contact">
+      <h1>
+        <span>Contact Me!</span>
+      </h1>
+      <h2>Get in touch</h2>
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        onSubmit={handleSubmit}
+      >
+        <input type="hidden" name="form-name" value="contact" />
+        <Label htmlFor="name">Name</Label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          onChange={handleChange}
+          value={form.name}
+        />
+        <Label htmlFor="email">Email</Label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          onChange={handleChange}
+          value={form.email}
+        />
+        <Label htmlFor="message">Message</Label>
+        <textarea
+          name="message"
+          id="message"
+          rows="5"
+          onChange={handleChange}
+          value={form.message}
+        ></textarea>
+
+        <input type="submit" className="btn" value="Send Message" />
+      </form>
+    </ContactMe>
+  )
+}
 
 export default Contact
