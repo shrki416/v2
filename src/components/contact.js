@@ -110,6 +110,11 @@ const Contact = () => {
     })
       .then(() => alert("Success!"))
       .catch(error => alert(error))
+    setForm({
+      name: "",
+      email: "",
+      message: "",
+    })
   }
 
   return (
