@@ -131,7 +131,7 @@ const Container = styled.div`
 
   p {
     font-size: 1rem;
-    text-align: justify;
+    text-align: left;
     line-height: 1.75;
   }
 
