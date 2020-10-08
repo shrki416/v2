@@ -1,8 +1,12 @@
+# 💻 Peronal Website
+
 <p align="center">
   The second iteration of <a href="https://aa-dev.io/" target="_blank">https://aa-dev.io/</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
 </p>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/fe93fb5e-e703-4026-bcae-d29086cb6be8/deploy-status)](https://app.netlify.com/sites/boring-benz-607be6/deploys)
+Checkout the project [HERE](https://aa-dev.io/)
+
+![project-images](images/portfolio_images.png)
 
 ## 🛠 Installation & Set Up
 
@@ -71,3 +75,11 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
 12. **`README.md`**: A text file containing useful reference information about your project.
+
+## Summary
+
+This website is made with Gatsby and hosted on Netlify. It is the second iteration of my personal website. I wanted to make my personal site with React, and I ended up picking up Gatsby in the process. It wasn't easy, but it was a lot of fun to make.
+
+### Author
+
+- Ahmed Abdelaal - [Website](https://aa-dev.io/) | [LinkedIn](https://www.linkedin.com/feed/)
