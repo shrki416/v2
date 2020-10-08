@@ -6,7 +6,7 @@
 
 Checkout the project [HERE](https://aa-dev.io/)
 
-![project-images](images/portfolio_images.png)
+![project-images](src/images/portfolio_images.png)
 
 ## 🛠 Installation & Set Up
 
