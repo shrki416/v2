@@ -2,9 +2,7 @@
   The second iteration of <a href="https://aa-dev.io/" target="_blank">https://aa-dev.io/</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
 </p>
 
-<p align="center">
-  [![Netlify Status](https://api.netlify.com/api/v1/badges/fe93fb5e-e703-4026-bcae-d29086cb6be8/deploy-status)](https://app.netlify.com/sites/boring-benz-607be6/deploys)
-</p>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fe93fb5e-e703-4026-bcae-d29086cb6be8/deploy-status)](https://app.netlify.com/sites/boring-benz-607be6/deploys)
 
 ## 🛠 Installation & Set Up
 
