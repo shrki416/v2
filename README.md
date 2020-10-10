@@ -5,6 +5,7 @@
 </p>
 
 Checkout the project [HERE](https://aa-dev.io/)
+Checkout the previous iteration (v1) [HERE](https://shrki416.github.io/Portfolio-Site/)
 
 ![project-images](src/images/portfolio_images.png)
 
