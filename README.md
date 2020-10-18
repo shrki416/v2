@@ -6,8 +6,10 @@
   The second iteration of <a href="https://aa-dev.io/" target="_blank">https://aa-dev.io/</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
 </p>
 
-Checkout the project [HERE](https://aa-dev.io/)
-Checkout the previous iteration (v1) [HERE](https://shrki416.github.io/Portfolio-Site/)
+<p align="center">
+  Checkout the project [HERE](https://aa-dev.io/)
+  Checkout the previous iteration (v1) [HERE](https://shrki416.github.io/Portfolio-Site/)
+</p>
 
 ![project-images](src/images/portfolio_images.png)
 
