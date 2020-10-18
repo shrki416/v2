@@ -7,8 +7,8 @@
 </p>
 
 <p align="center">
-  Checkout the project [HERE](https://aa-dev.io/)
-  Checkout the previous iteration (v1) [HERE](https://shrki416.github.io/Portfolio-Site/)
+  Checkout the project <a href="https://aa-dev.io/" target="_blank">Here</a>
+  Checkout the previous iteration (v1) <a href="https://shrki416.github.io/Portfolio-Site/" target="_blank">Here</a>
 </p>
 
 ![project-images](src/images/portfolio_images.png)
