@@ -3,12 +3,11 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/fe93fb5e-e703-4026-bcae-d29086cb6be8/deploy-status)](https://app.netlify.com/sites/boring-benz-607be6/deploys)
 
 <p align="center">
-  The second iteration of <a href="https://aa-dev.io/" target="_blank">https://aa-dev.io/</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+  The second iteration of <a href="https://aa-dev.io/" target="_blank">aa-dev.io</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
 </p>
 
 <p align="center">
-  Checkout the project <a href="https://aa-dev.io/" target="_blank">Here</a>
-  Checkout the previous iteration (v1) <a href="https://shrki416.github.io/Portfolio-Site/" target="_blank">Here</a>
+  Checkout the previous iteration (v1) <a href="https://shrki416.github.io/Portfolio-Site/">Here</a>
 </p>
 
 ![project-images](src/images/portfolio_images.png)
