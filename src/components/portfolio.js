@@ -43,7 +43,7 @@ const Projects = styled.div`
 const Portfolio = () => (
   <PortfolioSection id="portfolio">
     <h2>
-      <span>My Portfolio</span>
+      <span>Portfolio</span>
     </h2>
     <Projects>
       <StaticQuery
