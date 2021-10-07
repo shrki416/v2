@@ -10,7 +10,8 @@
   Checkout the previous iteration (v1) <a href="https://shrki416.github.io/Portfolio-Site/">Here</a>
 </p>
 
-![project-images](src/images/portfolio_images.png)
+![project-images](src/images/light-mode.png)
+![project-images](src/images/dark-mode.png)
 
 ## 🛠 Installation & Set Up
 
