@@ -32,6 +32,7 @@ body.light .gg-sun {
   width: 24px;
   height: 24px;
   margin-left: 20px;
+  cursor: pointer;
 }
 
 .gg-sun {
