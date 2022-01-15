@@ -1,11 +1,10 @@
 import React from "react"
-import resume from "../images/AA_Resume_v2.pdf"
-import styled from "styled-components"
-
-import code from "../images/code.svg"
-import world from "../images/world.svg"
 import aboutMe from "../images/about-me.svg"
+import code from "../images/code.svg"
 import deskPhoto from "../images/portfolio-03.jpg"
+import resume from "../images/Ahmed - Resume.pdf"
+import styled from "styled-components"
+import world from "../images/world.svg"
 
 const AboutWrapper = styled.section`
   margin: 0 auto;
